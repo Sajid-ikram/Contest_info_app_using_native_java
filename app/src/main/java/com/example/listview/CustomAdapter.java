@@ -21,6 +21,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textName;
         private final TextView textUrl;
+        private final TextView startTime;
 
         public ViewHolder(View view) {
             super(view);
@@ -28,6 +29,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
             textName = (TextView) view.findViewById(R.id.contestName);
             textUrl = (TextView) view.findViewById(R.id.contestUrl);
+            startTime = (TextView) view.findViewById(R.id.startTime);
         }
 
         public TextView getTextView() {
@@ -59,6 +61,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         viewHolder.getTextView().setText(localDataSet.get(position).name);
         viewHolder.textUrl.setText(localDataSet.get(position).url);
+        viewHolder.startTime.setText(localDataSet.get(position).startTime);
     }
 
     // Return the size of your dataset (invoked by the layout manager)

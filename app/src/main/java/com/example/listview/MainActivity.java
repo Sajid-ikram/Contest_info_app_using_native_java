@@ -13,15 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     public static final String NAME_KEY = "com.example.listview.name.key";
     ListView listView;
-    String[] arr = {"CodeForces",
-            "CodeChef",
-            "toph",
-            "TopCoder",
-            "AtCoder",
-            "CSAcademy",
-            "HackerRank",
-            "HackerEarth",
-            "LeetCode",};
+    String[] arr = {"AllContest","Contest Within 24 Hours","CodeForces", "CodeChef", "TopCoder", "AtCoder", "CSAcademy", "HackerRank", "HackerEarth", "LeetCode",};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
